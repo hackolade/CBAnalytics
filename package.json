@@ -1,0 +1,61 @@
+{
+	"name": "CBAnalytics",
+	"version": "0.0.1",
+	"versionDate": "2019-04-21",
+	"author": "hackolade",
+	"engines": {
+		"hackolade": "3.0.x",
+		"hackoladePlugin": "1.2.0"
+	},
+	"contributes": {
+		"target": {
+			"applicationTarget": "CBANALYTICS",
+			"title": "Couchbase Analytics",
+			"versions": [
+				"6.x"
+			]
+		},
+        "features": {
+            "jaySchemaHasRequiredPatternField": false,
+            "nestedCollections": false,
+			"disableMultipleTypes": false,
+			"enableReverseEngineering": {
+				"jsonDocument": true,
+				"jsonSchema": true,
+				"ddl": true,
+				"xsd": true,
+				"plugin": true 
+			},
+			"disableDenormalization": false,
+			"enableForwardEngineering": {
+				"jsonDocument": true,
+				"jsonSchema": true,
+				"plugin": true
+			},
+			"disablePatternField": false,
+			"disableChoices": {
+				"anyOf": false,
+				"allOf": false,
+				"oneOf": false,
+				"not": false
+			},
+			"enableJsonType": false,
+			"disableNamingConvention": {
+				"containerLevel": false,
+				"entityLevel": false,
+				"fieldLevel": {
+					"parameter": false
+				}
+			},
+			"disableChildren": {
+				"entityLevel": false
+			},
+			"disableDefinitions": {
+				"internal": false
+			},
+			"disableRelationships": false,
+			"disableJsonPreview": false
+        }
+	},
+	"description": "Hackolade plugin for Couchbase Analytics"
+}

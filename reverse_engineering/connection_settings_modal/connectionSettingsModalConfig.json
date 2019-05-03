@@ -1,0 +1,91 @@
+[
+	{
+		"lowerTab": "Connection",
+		"structure": [
+			{
+				"inputLabel": "Name",
+				"inputKeyword": "name",
+				"inputType": "text",
+				"inputPlaceholder": "Name"
+			},
+			{
+				"inputLabel": "Host",
+				"inputKeyword": "host",
+				"inputType": "text",
+				"inputPlaceholder": "Host",
+				"description": "",
+				"validation": {
+					"regex": "([^\\s])"
+				}
+			},
+			{
+				"inputLabel": "Port",
+				"inputKeyword": "port",
+				"inputType": "text",
+				"inputPlaceholder": "Port",
+				"description": "",
+				"validation": {
+					"regex": "([^\\s])"
+				}
+			},
+			{
+				"inputLabel": "Hive version",
+				"inputKeyword": "version",
+				"inputType": "select",
+				"options": [
+					{ "value": "3.x", "label": "3.x" },
+					{ "value": "2.x", "label": "2.x" }
+				]
+			}
+		]
+	}, {
+		"lowerTab": "Authentication",
+		"structure": [
+			{
+				"inputLabel": "User Name",
+				"inputKeyword": "user",
+				"inputType": "text",
+				"inputPlaceholder": "User Name"
+				
+			},
+			{
+				"inputLabel": "Password",
+				"inputKeyword": "password",
+				"inputType": "password",
+				"isHiddenKey": true
+			}
+		]	
+	}, {
+		"lowerTab": "Options",
+		"structure": [
+			{
+				"inputLabel": "Transport mode",
+				"inputKeyword": "mode",
+				"inputType": "select",
+				"options": [
+					{ "value": "binary", "label": "binary" },
+					{ "value": "http", "label": "http" }
+				]
+			},
+			{
+				"inputLabel": "HTTP path",
+				"inputKeyword": "path",
+				"inputType": "text",
+				"inputPlaceholder": "hive2",
+				"dependency": {
+					"key": "mode",
+					"value": "http"
+				}
+			},
+			{
+				"inputLabel": "HTTPS",
+				"inputKeyword": "isHTTPS",
+				"inputType": "checkbox",
+				"dependency": {
+					"key": "mode",
+					"value": "http"
+				}
+			}
+		]	
+	}
+]

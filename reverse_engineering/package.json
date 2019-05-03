@@ -1,0 +1,13 @@
+{
+  "name": "CBAnalytics",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Hackolade",
+  "dependencies": {
+    "async": "^2.6.1",
+    "big.js": "^5.2.1",
+    "lodash": "^4.17.11",
+    "thrift": "^0.11.0"
+  },
+  "installed": true
+}

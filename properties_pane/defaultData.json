@@ -1,0 +1,49 @@
+{
+	"model": {
+		"modelName": "New model",
+		"dbVersion": "6.x",
+		"dbVendor": "Couchbase Analytics"
+	},
+	"container": {
+		"name": "New dataverse",
+		"indexes": []
+	},
+	"collection": {
+		"collectionName": "New dataset",
+		"collectionUsers": [],
+		"collation": {}
+	},
+	"field": {
+		"name": "New field"
+	},
+	"patternField": {
+		"name": "^[a-zA-Z0-9_.-]+$"
+	},
+	"multipleField": {
+		"primaryKey": false
+	},
+	"subschema": {},
+	"arrayItem": {},
+	"choice": {},
+	"relationship": {
+		"customProperties": {
+			"disableNoValidate": true
+		}
+	},
+	"user": {},
+	"view": {
+		"viewOn": "",
+		"pipeline": ""
+	},
+	"SecIndxs": {
+		"name": "New Secondary Index",
+		"SecIndxKey": "",
+		"SecIndxID": "",
+		"SecIndxHandler": "org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler",
+		"SecIndxWithDeferredRebuild": true,
+		"SecIndxProperties": "",
+		"SecIndxTable": "",
+		"SecIndxDescription": "",
+		"SecIndxComments": ""
+	}
+}

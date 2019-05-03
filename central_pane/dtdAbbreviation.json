@@ -1,0 +1,8 @@
+{
+	"object": "{...}",
+	"array": "[...]",
+	"string": "{ABC}",
+	"number": "{123}",
+	"boolean": "{0/1}",
+	"null": "{null}"
+}
